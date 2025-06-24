@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>seizeourdays</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="login-container">
+  <header>
     <h1>seizeourdays</h1>
-    <input type="password" id="password" placeholder="Enter password..." />
-    <button onclick="checkPassword()">Enter</button>
-  </div>
-  <script>
-    function checkPassword() {
-      const pw = document.getElementById('password').value;
-      if (pw === '1218') {
-        window.location.href = 'main.html';
-      } else {
-        alert('Wrong password!');
-      }
-    }
-  </script>
+    <button onclick="window.location.href='write.html'">+ Write</button>
+  </header>
+  <main id="post-feed"></main>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Write - seizeourdays</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Write New Post</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Write a Post</h1>
-    <a href="main.html">← Back</a>
-  </header>
+  <header><h1>Write a New Post</h1></header>
   <main>
-    <form id="post-form">
-      <input type="text" id="title" placeholder="Title" required/>
-      <textarea id="content" placeholder="Write your thoughts..." required></textarea>
-      <input type="url" id="youtube" placeholder="YouTube Link (optional)"/>
-      <input type="url" id="link" placeholder="External Link (optional)"/>
-      <label>Representative Image: <input type="file" id="cover" accept="image/*" required/></label>
-      <label>Additional Images: <input type="file" id="images" accept="image/*" multiple/></label>
+    <form id="postForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="image" placeholder="Image URL (for cover)" />
+      <textarea id="content" placeholder="Write your content here..." required></textarea>
       <button type="submit">Save</button>
     </form>
   </main>
