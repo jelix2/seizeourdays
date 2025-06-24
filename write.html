@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Write a Post - seizeourdays</title>
+  <title>Write - seizeourdays</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -11,19 +11,17 @@
     <h1>Write a Post</h1>
     <a href="main.html">← Back</a>
   </header>
-  <main class="write-form">
-    <input type="text" id="title" placeholder="Title" />
-    <textarea id="content" placeholder="Write your post here..."></textarea>
-    <input type="text" id="youtube" placeholder="YouTube URL (optional)" />
-    <button onclick="savePost()">Save</button>
+  <main>
+    <form id="post-form">
+      <input type="text" id="title" placeholder="Title" required/>
+      <textarea id="content" placeholder="Write your thoughts..." required></textarea>
+      <input type="url" id="youtube" placeholder="YouTube Link (optional)"/>
+      <input type="url" id="link" placeholder="External Link (optional)"/>
+      <label>Representative Image: <input type="file" id="cover" accept="image/*" required/></label>
+      <label>Additional Images: <input type="file" id="images" accept="image/*" multiple/></label>
+      <button type="submit">Save</button>
+    </form>
   </main>
-  <script>
-    function savePost() {
-      const title = document.getElementById('title').value;
-      const content = document.getElementById('content').value;
-      const youtube = document.getElementById('youtube').value;
-      alert("Saved (demo only, not persistent without server)");
-    }
-  </script>
+  <script src="write.js"></script>
 </body>
 </html>

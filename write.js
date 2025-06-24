@@ -1,0 +1,1 @@
+document.getElementById('post-form').addEventListener('submit', function(e) { e.preventDefault(); alert('Post saved!'); });

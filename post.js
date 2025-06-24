@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', function() { document.getElementById('post-content').innerHTML = '<h2>Post Content Here</h2>'; });
