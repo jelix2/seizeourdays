@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Write - seizeourdays</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Write a Post</h1>
+    <a href="main.html">← Back</a>
+  </header>
+  <main>
+    <form id="post-form">
+      <input type="text" id="title" placeholder="Title" required/>
+      <textarea id="content" placeholder="Write your thoughts..." required></textarea>
+      <input type="url" id="youtube" placeholder="YouTube Link (optional)"/>
+      <input type="url" id="link" placeholder="External Link (optional)"/>
+      <label>Representative Image: <input type="file" id="cover" accept="image/*" required/></label>
+      <label>Additional Images: <input type="file" id="images" accept="image/*" multiple/></label>
+      <button type="submit">Save</button>
+    </form>
+  </main>
+  <script src="write.js"></script>
+</body>
+</html>

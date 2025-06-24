@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', function() { document.getElementById('post-feed').innerHTML = ''; });
