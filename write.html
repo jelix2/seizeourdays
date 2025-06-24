@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Write a Post - seizeourdays</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Write a Post</h1>
+    <a href="main.html">← Back</a>
+  </header>
+  <main class="write-form">
+    <input type="text" id="title" placeholder="Title" />
+    <textarea id="content" placeholder="Write your post here..."></textarea>
+    <input type="text" id="youtube" placeholder="YouTube URL (optional)" />
+    <button onclick="savePost()">Save</button>
+  </main>
+  <script>
+    function savePost() {
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
+      const youtube = document.getElementById('youtube').value;
+      alert("Saved (demo only, not persistent without server)");
+    }
+  </script>
+</body>
+</html>
